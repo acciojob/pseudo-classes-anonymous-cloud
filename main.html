@@ -4,11 +4,84 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+
+	<style>
+		article p:first-child {
+    background-color: black;
+    color: white;
+}
+article p:nth-child(2) {
+    color: inherit; /* Uses the default text color */
+}
+
+article p:last-child {
+    color: red;
+}
+		ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    width: 50%;
+    padding: 10px;
+    background-color: gray;
+    font-size: 16px;
+}
+
+ul li:nth-child(odd) {
+    background-color: white;
+}
+
+ul li:first-child,
+ul li:last-child {
+    font-size: 22px;
+}
+
+ul li:nth-last-child(3) {
+    background-color: pink;
+}
+	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<article>
+    <p>First paragraph</p>
+	<p>
+		This is the second paragraph.
+		<br>
+		<br>
+		This is the second paragraph.
+
+		
+		
+	</p>
+	<p>This is the Third paragraph.</p>
+</article>
+	<ul>
+		<li>First item</li>
+		<li>Second item</li>
+		<li>Third item</li>
+		<li>Fourth item</li>
+		<li>Fifth item</li>
+	</ul>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
     <script type="text/javascript" src="./script.js">
+		
 </script>
 
 </body>
